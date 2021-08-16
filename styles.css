@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&display=swap');
+
+.border-div {
+  position: fixed;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  background: #44cbb04d;
+  z-index: -3;
+}
+
+/* Borders and main color */
+body {
+  background: url("./images/background.jpg");
+  background-size: 180%;
+  background-repeat: no-repeat;
+  padding: none;
+  margin: none;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+/* Frame for the header and form */
+.outter-div {
+  grid-area: 1/2;
+  margin-top: 30px;
+}
+
+/* Header container*/
+.top-header {
+  color: white;
+  height: 13%;
+  display: grid;
+  grid-template-rows: 2f 1fr;
+}
+
+/* Company Logo */
+.company-name {
+  grid-area: 1/1;
+  text-align: center;
+  background: url("./images/Sparkles-logos_white.png");
+  height: 80px;
+  background-size: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Sub-title of header */
+.slogan {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+/* Frame for the form */
+.form-div {
+  display: grid;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  color: black;
+  font-size: 16px;
+  line-height: 30px;
+  padding: 10%;
+  font-family: 'Dosis', sans-serif;
+}
+
+/* All the label names */
+.labels {
+  line-height: 30px;
+  font-size: 16px;
+}
+
+/* Divs for each element in the form */
+.name-div, .email-div, .age-div, .role-div, .recommendation-div, .favorite-div, .improved-div, .comments-div, .submit-box {
+  width: 100%;
+  margin-top: 10px;
+  align-self: center;
+} 
+
+/* Alignment, and height */
+.input-box, .comment-box, .submit-box {
+  width: 100%;
+  font-size: 15px;
+  background: rgb(255, 255, 255);
+  box-shadow: none;
+  padding: 10px;
+  border: solid black 1px;
+  border-radius: 5px;
+}
+
+/* Textarea element, comments */
+textarea {
+  width: 100%;
+  resize: none;
+  font-family: 'Dosis', sans-serif;
+  font-size: 30px;
+}
+
+/* "*" -> required symbol */
+span {
+  color:red;
+}
