@@ -6,3 +6,4 @@
 
 #2021-08-16:
 I'm almost finishing the form from scratch, my code got pretty messy, but for now I don't have to worry about it, just at the end, hopefully.. I created some random logo to make it less like FreeCodeCamp example, I thinks is getting nice, I hope that at the end I can fix all the problems on the layout, and also make my code cleaner because rn... Ok, till next day. 👋
+<p>The first version preview: <a href="https://codepen.io/tysper013/full/RwVmoJw">Survey Form - First Version</a></p>
