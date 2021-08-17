@@ -1,103 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-.border-div {
-  position: fixed;
-  right: 0px;
-  left: 0px;
-  top: 0px;
-  bottom: 0px;
-  background: #44cbb04d;
-  z-index: -3;
-}
-
-/* Borders and main color */
-body {
-  background: url("./images/background.jpg");
-  background-size: 180%;
-  background-repeat: no-repeat;
-  padding: none;
-  margin: none;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-}
-
-/* Frame for the header and form */
-.outter-div {
-  grid-area: 1/2;
-  margin-top: 30px;
-}
-
-/* Header container*/
-.top-header {
-  color: white;
-  height: 13%;
-  display: grid;
-  grid-template-rows: 2f 1fr;
-}
-
-/* Company Logo */
-.company-name {
-  grid-area: 1/1;
-  text-align: center;
-  background: url("./images/Sparkles-logos_white.png");
-  height: 80px;
-  background-size: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* Sub-title of header */
-.slogan {
-  font-style: italic;
-  font-weight: bold;
-  font-size: 22px;
-}
-
-/* Frame for the form */
-.form-div {
-  display: grid;
-  background: rgb(255, 255, 255);
-  border-radius: 5px;
+* {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  text-align: left;
+  font-size: 20px;
   color: black;
-  font-size: 16px;
-  line-height: 30px;
-  padding: 10%;
-  font-family: 'Dosis', sans-serif;
+  letter-spacing: 1.5px;
 }
 
-/* All the label names */
-.labels {
-  line-height: 30px;
-  font-size: 16px;
-}
-
-/* Divs for each element in the form */
-.name-div, .email-div, .age-div, .role-div, .recommendation-div, .favorite-div, .improved-div, .comments-div, .submit-box {
-  width: 100%;
-  margin-top: 10px;
-  align-self: center;
-} 
-
-/* Alignment, and height */
-.input-box, .comment-box, .submit-box {
-  width: 100%;
-  font-size: 15px;
-  background: rgb(255, 255, 255);
-  box-shadow: none;
-  padding: 10px;
-  border: solid black 1px;
-  border-radius: 5px;
-}
-
-/* Textarea element, comments */
-textarea {
-  width: 100%;
-  resize: none;
-  font-family: 'Dosis', sans-serif;
-  font-size: 30px;
-}
-
-/* "*" -> required symbol */
+/* Required symbol */
 span {
   color:red;
+}
+
+/* Body of the document */
+body {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background: rgb(23, 23, 68);
+  align-items: center;
+}
+
+/* Alignment Div */
+.outter-div {
+  grid-area: 1/2;
+}
+
+/* Logo */
+.company-name {
+  height: 100px;
+  background: url("./images/Sparkles-logos_white.png");
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 40px 0px 40px 0px;
+}
+
+/* Sub-title */
+.sub-text {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+/* Form div */
+.form-div {
+  background-color: white;
+  margin-top: 40px;
+  display: grid;
+  align-items: center;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+/* Elements spacing */
+.form-div * {
+  margin-top: 0px;
+}
+
+/* All input boxes */
+.input-box {
+  width: 98.2%;
+  margin: 20px 0px 0px 0px;
+  padding: 5px;
+}
+
+/* Drop lists */
+.list-box {
+  width: 100%;
+  padding: 5px;
+}
+
+/* Checkboxes and Radio buttons spacing */
+input[type="checkbox"], input[type="radio"] {
+  margin: 0px 10px 0px 10px;
+}
+
+/* Write a comment */
+.comment-box {
+  resize: vertical;
+  min-height: 40px;
+}
+
+/* Submit button */
+.submit-box {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  text-transform: uppercase;
 }
