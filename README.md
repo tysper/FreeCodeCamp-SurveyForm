@@ -15,7 +15,7 @@ I decided to redo all the css structure because it was too messy, now I let it v
 <p>The second version preview: <a href="https://codepen.io/tysper013/full/JjNqQxY">Code Pen Link - 2nd Version</a></p>
 
 #2021-08-18:
-It took me 3 days, but yeah I am pretty satisfied with the final result, the design changed a little, and I kinda prefer this last version. After facing some challenges on the first version, I decided to redo the StylheSheet. Here are the concepts that I used to build this project:
+It took me 3 days, but yeah I am pretty satisfied with the final result, the design changed a little, and I kinda prefer this last version. After facing some challenges on the first version, I decided to redo the entire StyleSheet. Here are the concepts that I used to build this project:
 
 - CSS Box Model
 - HTML Semantics
