@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/* Global settings */
 * {
   font-family: 'Atkinson Hyperlegible', sans-serif;
   text-align: left;
   font-size: 20px;
   color: black;
   letter-spacing: 1.5px;
+  margin: 0;
+  padding: 0;
 }
 
 /* Required symbol */
@@ -13,17 +16,53 @@ span {
   color:red;
 }
 
-/* Body of the document */
-body {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  background: rgb(23, 23, 68);
-  align-items: center;
+/* Background image */
+.background-img {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-image: url("./images/background.jpg");
+  background-position: center;
+  background-size: 100vh;
+  top: 0;
+  z-index: -3;
 }
 
-/* Alignment Div */
-.outter-div {
-  grid-area: 1/2;
+/* color ovelap */
+.background-color {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(23, 23, 68, 0.61);
+  z-index: -2;
+}
+
+
+/* Responsiveness */
+@media (min-width: 600px) {
+  .outter-div {
+    width: 600px;
+    margin: 0 auto;
+  }
+  .background-img {
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 600px) {
+  .outter-div {
+    width: 100vw;
+    margin: 0;
+  }
+  .background-img {
+    background-size: 300vw;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
 }
 
 /* Logo */
@@ -49,19 +88,19 @@ body {
   margin-top: 40px;
   display: grid;
   align-items: center;
-  padding: 30px;
-  border-radius: 5px;
+  padding: 40px;
+  border-radius: 10px 10px 0 0;
 }
 
 /* Elements spacing */
 .form-div * {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 /* All input boxes */
 .input-box {
   width: 98.2%;
-  margin: 20px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
   padding: 5px;
 }
 
@@ -73,19 +112,28 @@ body {
 
 /* Checkboxes and Radio buttons spacing */
 input[type="checkbox"], input[type="radio"] {
-  margin: 0px 10px 0px 10px;
+  margin: 0px 10px;
 }
 
 /* Write a comment */
 .comment-box {
   resize: vertical;
   min-height: 40px;
+  padding: 5px;
 }
 
 /* Submit button */
 .submit-box {
+  color: white;
   text-align: center;
   font-size: 16px;
   padding: 10px;
   text-transform: uppercase;
+  background-color: rgb(7, 117, 16);
+  border: none;
+  border-radius: 6px;
+}
+
+.submit-box:hover {
+  background-color: rgb(4, 85, 11);
 }

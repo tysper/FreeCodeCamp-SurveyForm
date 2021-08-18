@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Pedro Nunes">
   <title>Sparkles Survey</title>
   <link rel="stylesheet" href="styles.css">
   <script>
@@ -11,28 +12,30 @@
 </head>
 <body>
 
+  <div class="background-img"></div>
+  <div class="background-color"></div>
   <div class="outter-div">
     <div class="company-name"></div>
     
-    <p class="sub-text">Thank you for taking the time to helps us improve the platform</p>
+    <p id="description" class="sub-text">Thank you for taking the time to helps us improve the platform :)</p>
     
-    <form class="form-div">
+    <form id="survey-form" class="form-div">
       <!--Name-->
-      <label class="labels">
-        Name: <span>*</span><br><input class="input-box"type="text" placeholder="Enter your name">
+      <label id="name-label" class="labels">
+        Name: <span>*</span><br><input id="name" class="input-box"type="text" placeholder="Enter your name">
       </label><br>
 
-      <label class="labels">
-        Email: <span>*</span><br><input class="input-box" type="text" placeholder="Enter your best email">
+      <label id="email-label" class="labels">
+        Email: <span>*</span><br><input id="email" class="input-box" type="text" placeholder="Enter your best email">
       </label><br>
       
       <!--Age-->
-      <label class="labels">
-        Age:<br><input class="input-box" type="number" placeholder="0">
+      <label id="number-label" class="labels">
+        Age:<br><input id="number" class="input-box" type="number" min="16" max="100" placeholder="0">
       </label><br>
 
       <!--Drop list-->
-      <label class="labels">
+      <label id="dropdown" class="labels">
         Which option best describes your current role? <span>*</span>
       </label><br>
         
@@ -165,8 +168,9 @@
       
 
       <!--Submit button-->
-      <button class="submit-box" onclick="alertUser()">Submit</button>
+      <button id="submit" class="submit-box" onclick="alertUser()">Submit</button>
     </form>
   </div>
+
 </body>
 </html>
